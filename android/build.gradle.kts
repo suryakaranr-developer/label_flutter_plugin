@@ -78,8 +78,5 @@ kotlin {
 }
 
 dependencies {
-    implementation("com.suryakaranr:labelsdk:1.0.0")
-
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
-    testImplementation("org.mockito:mockito-core:5.0.0")
+    implementation("com.suryakaranr:labelsdk:1.1.0")
 }

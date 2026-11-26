@@ -1,20 +1,21 @@
 # label_flutter_plugin
 
 Flutter package for the Label SDK. The Dart API sends the **package ID, client ID
-and license key** over a MethodChannel to the Android plugin, which passes them to
-the Label SDK AAR. The AAR checks the license against Supabase and, once valid,
-returns the label.
+and license key** over a MethodChannel to the Android MethodChannel handler that
+lives in the Label SDK AAR. The AAR checks the license against Supabase and, once
+valid, returns the label.
 
 ```
 Flutter app ──Dart API──▶ MethodChannel "com.suryakaranr/label_flutter_plugin"
                                   │
                                   ▼
-                     LabelFlutterPlugin.kt (Android)
-                                  │
-                                  ▼
                  Label SDK AAR (com.suryakaranr:labelsdk)
-                   ├─ license check → Supabase validate_package RPC
-                   └─ label logic
+                   ├─ LabelMethodChannel  (Android MethodChannel handler)
+                   ├─ LabelSdk
+                   │    ├─ license check → Supabase validate_package RPC
+                   │    └─ label logic
+
+LabelFlutterPlugin.kt only registers LabelMethodChannel with the Flutter engine.
 ```
 
 Platforms: Android (minSdk 24).
@@ -47,7 +48,7 @@ if (license.isValid) {
 
 ## MethodChannel contract
 
-Channel `com.suryakaranr/label_flutter_plugin`:
+Handled on Android by `LabelMethodChannel` in the AAR. Channel `com.suryakaranr/label_flutter_plugin`:
 
 | Method | Arguments | Result |
 |---|---|---|
