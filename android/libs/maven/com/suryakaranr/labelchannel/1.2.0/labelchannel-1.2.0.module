@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.suryakaranr",
+    "module": "labelchannel",
+    "version": "1.2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "labelchannel-1.2.0.aar",
+          "url": "labelchannel-1.2.0.aar",
+          "size": 5841,
+          "sha512": "3dd7270ee0eef5263e6f74595bf29538e57a6276242c87dfcb3b3b15c158e87813df1982a7f662b9be7e530c6a4776db79b43ca8d9fed244185608eef1f46f05",
+          "sha256": "80df6332da5fad4c0620423b1bdb8f9075a6790bec08098e43aa0ba7559d61c4",
+          "sha1": "486fa6a4ed40a08457f074bc800748f716d3cf97",
+          "md5": "1e052ec6ff9afc266aa17f75e8f50f65"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.suryakaranr",
+          "module": "labelsdk",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "labelchannel-1.2.0.aar",
+          "url": "labelchannel-1.2.0.aar",
+          "size": 5841,
+          "sha512": "3dd7270ee0eef5263e6f74595bf29538e57a6276242c87dfcb3b3b15c158e87813df1982a7f662b9be7e530c6a4776db79b43ca8d9fed244185608eef1f46f05",
+          "sha256": "80df6332da5fad4c0620423b1bdb8f9075a6790bec08098e43aa0ba7559d61c4",
+          "sha1": "486fa6a4ed40a08457f074bc800748f716d3cf97",
+          "md5": "1e052ec6ff9afc266aa17f75e8f50f65"
+        }
+      ]
+    }
+  ]
+}

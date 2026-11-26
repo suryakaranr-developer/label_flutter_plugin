@@ -3,7 +3,7 @@
   "component": {
     "group": "com.suryakaranr",
     "module": "labelsdk",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -33,13 +33,13 @@
       ],
       "files": [
         {
-          "name": "labelsdk-1.1.0.aar",
-          "url": "labelsdk-1.1.0.aar",
-          "size": 19582,
-          "sha512": "4004255677a5e89bcc5974fdb2c7646d81b7aef1bf05f07daf3d5a6534450b2282cb2d710765cf7ad141988a7d3c84aadcceb0c8f10c4fedfb0d09a1aa40e7ba",
-          "sha256": "742bd68d3a2701d72b0e89e3cfc4b95eeb61a399748fd67a62c4e02271de8f79",
-          "sha1": "1fcefe6db09ba6b0622cd8d4d62514bbff1f0dba",
-          "md5": "f88004247fd75145d9136abb394878e1"
+          "name": "labelsdk-1.2.0.aar",
+          "url": "labelsdk-1.2.0.aar",
+          "size": 15056,
+          "sha512": "47e25cffb1784bff935de617da77e2b875c82b8bef9763b60586c9d2ba56cd0a53cd5d6bf75d524490d3f2b7b14ed347c7fa44cf62bf9e85b1b08e83a995d807",
+          "sha256": "a96ab8a2c45e66b5b7abd7951318c0e6c6ebfbd516e95d4c36cbe3e4069925a3",
+          "sha1": "22189b7c21b2bfddc20884c7ae0fea8a68b6c59c",
+          "md5": "0a80a5d56f1a302ee2ccafdab68a66df"
         }
       ]
     },
@@ -62,13 +62,13 @@
       ],
       "files": [
         {
-          "name": "labelsdk-1.1.0.aar",
-          "url": "labelsdk-1.1.0.aar",
-          "size": 19582,
-          "sha512": "4004255677a5e89bcc5974fdb2c7646d81b7aef1bf05f07daf3d5a6534450b2282cb2d710765cf7ad141988a7d3c84aadcceb0c8f10c4fedfb0d09a1aa40e7ba",
-          "sha256": "742bd68d3a2701d72b0e89e3cfc4b95eeb61a399748fd67a62c4e02271de8f79",
-          "sha1": "1fcefe6db09ba6b0622cd8d4d62514bbff1f0dba",
-          "md5": "f88004247fd75145d9136abb394878e1"
+          "name": "labelsdk-1.2.0.aar",
+          "url": "labelsdk-1.2.0.aar",
+          "size": 15056,
+          "sha512": "47e25cffb1784bff935de617da77e2b875c82b8bef9763b60586c9d2ba56cd0a53cd5d6bf75d524490d3f2b7b14ed347c7fa44cf62bf9e85b1b08e83a995d807",
+          "sha256": "a96ab8a2c45e66b5b7abd7951318c0e6c6ebfbd516e95d4c36cbe3e4069925a3",
+          "sha1": "22189b7c21b2bfddc20884c7ae0fea8a68b6c59c",
+          "md5": "0a80a5d56f1a302ee2ccafdab68a66df"
         }
       ]
     }

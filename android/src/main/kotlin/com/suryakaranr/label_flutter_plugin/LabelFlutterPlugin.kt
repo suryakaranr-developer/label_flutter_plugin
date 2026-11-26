@@ -1,12 +1,13 @@
 package com.suryakaranr.label_flutter_plugin
 
-import com.suryakaranr.labelsdk.flutter.LabelMethodChannel
+import com.suryakaranr.labelchannel.LabelMethodChannel
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 
 /**
- * Registers the Label SDK's Android MethodChannel ([LabelMethodChannel],
- * inside the AAR). The Dart side of this package sends the package ID,
- * client ID and license key over that channel; the AAR handles every call.
+ * Connects this package's Dart MethodChannel to the Android MethodChannel
+ * from label-android-sdk ([LabelMethodChannel]). That channel passes the
+ * package ID, client ID and license key to the native Label SDK AAR and
+ * returns its result to Dart.
  */
 class LabelFlutterPlugin : FlutterPlugin {
 

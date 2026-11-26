@@ -14,7 +14,7 @@ buildscript {
     }
 }
 
-// The Label SDK AAR (com.suryakaranr:labelsdk) ships inside this plugin as a
+// The Label SDK AARs (com.suryakaranr:labelchannel + labelsdk) ship inside this plugin as a
 // folder Maven repository, published from the label-android-sdk repo.
 // The app resolves this plugin's dependencies, so the folder is added to every
 // project of the app's build.
@@ -78,5 +78,6 @@ kotlin {
 }
 
 dependencies {
-    implementation("com.suryakaranr:labelsdk:1.1.0")
+    // Android MethodChannel (labelchannel), which uses the native Label SDK AAR (labelsdk).
+    implementation("com.suryakaranr:labelchannel:1.2.0")
 }
